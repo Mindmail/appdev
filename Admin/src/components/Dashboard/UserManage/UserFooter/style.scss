@@ -1,0 +1,32 @@
+.footer-container {
+  border-radius: 0 0 1rem 1rem;
+  background-color: var(--color-blue-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  .pagination {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+  }
+  .controller {
+    display: flex;
+    align-items: center;
+    select {
+      height: 2rem;
+      width: 4rem;
+      cursor: pointer;
+      border: transparent;
+      border-radius: 0.3rem;
+      color: var(--color-menu-2);
+      background-color: var(--color-blue-3);
+      &:focus {
+        outline: none;
+      }
+    }
+    .pageState {
+      color: var(--color-blue-3);
+    }
+  }
+}

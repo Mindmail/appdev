@@ -1,0 +1,33 @@
+.home-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+
+  &.bg-new-gradient {
+    background: rgb(100,55,115);
+    background: linear-gradient(90deg, rgba(100,55,115,1) 0%, rgba(166,59,162,1) 52%, rgba(76,166,184,1) 100%);
+  }
+  .logo {
+    padding: 3rem;
+    position: absolute;
+  }
+  .right-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+    justify-content: center;
+    .form-container {
+      border-radius: 8px;
+      background: #fff;
+      padding: 2rem 1.5rem;
+      align-content: center;
+      justify-content: center;
+
+      @media(min-width: 768px) {
+        padding: 3rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.trial-page-layout {
+  min-height: 100vh;
+
+  .header {
+    background: none;
+    height: auto !important;
+
+    .left {
+      text-align: right;
+    }
+
+    .mobile-header {
+      min-height: 5em;
+      position: relative;
+
+      .mobile-header-logo {
+        position: absolute;
+        left: -1.5em;
+      }
+
+      .mobile-header-menu {
+        position: absolute;
+        right: -1.5em;
+      }
+    }
+  }
+
+  .body {
+    display: flex;
+    align-items: center;
+
+    .content-body {
+      max-width: 678px;
+      margin: 0 auto;
+
+      .header-content {
+        margin-bottom: 1.75rem;
+
+        .title-intro {
+          margin: 0;
+        }
+      }
+
+      .content-intro {
+        max-width: 590px;
+        margin: 0 auto;
+        margin-bottom: 1.75rem;
+        font-size: 14px;
+
+        .free-trial-list {
+          
+          ul {
+            max-width: 456px;
+            padding: 0px;
+            margin: auto;
+
+            @media only screen and (max-width: 640px) {
+              padding-left: 0;
+            }
+
+            li {
+              display: flex;
+            }
+          }
+        }
+      }
+
+      .login-form {
+        max-width: 360px;
+        margin: 0 auto;
+        @media only screen and (max-width: 640px) {
+          .google-button {
+            margin-top: 1.3em;
+          }
+        }
+
+        .divider {
+          display: flex;
+          align-items: center;
+          text-align: center;
+        }
+
+        .divider::before,
+        .divider::after {
+          content: "";
+          flex: 1;
+          height: 1px;
+          background: var(--gray-color--5);
+        }
+
+        .divider:not(:empty)::before {
+          margin-right: 2em;
+        }
+
+        .divider:not(:empty)::after {
+          margin-left: 2em;
+        }
+
+        input {
+          height: auto;
+          padding: 0.5rem 1rem;
+          background: transparent;
+          border-color: rgba(152, 147, 164, 0.4);
+          border-radius: 8px;
+          font-size: 16px;
+          font-weight: 500;
+          color: var(--primary-color);
+        }
+      }
+
+      .footer-content {
+        a {
+          color: var(--primary-color);
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

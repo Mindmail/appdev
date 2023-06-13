@@ -1,0 +1,116 @@
+.start-affirmation {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+
+  padding: 3rem 2.75rem;
+}
+
+.affirmation-avatar {
+  img {
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+.affirmation-current-goals-buttons {
+  flex-wrap: wrap;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 0.5rem;
+
+  @media only screen and (max-width: 992px) {
+    border: 1px solid var(--primary-color) !important;
+    flex-wrap: wrap;  
+    border-radius: 8px;
+    padding: 0.5rem;
+  }
+  
+  
+  @media (min-width: 768px) {
+    padding: 1rem;
+    background-color: #fff;
+    border: none;
+  }
+}
+
+.affirmation-affirmations {
+  padding-top: 1.5em;
+}
+
+.affirmation-affirmations-content {
+  // border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: var(--white-color);
+
+  
+  @media only screen and (max-width: 992px) {
+    border: 1px solid var(--primary-color);
+    flex-wrap: wrap;  
+    border-radius: 8px;
+    padding: 0.5rem;
+  }
+  
+}
+
+.affirmation-affirmations-content {
+  .affirmation-affirmations-item + .affirmation-affirmations-item {
+    border-top: 1px solid var(--primary-color);
+  }
+}
+
+.affirmation-affirmations-item {
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 1rem;
+
+  @media (min-width: 768px) {
+    border: none;
+    border-radius: 0px;
+  }
+}
+.affirmation-affirmations-item-actions {
+  cursor: pointer;
+  padding: 2px;
+  &:hover {
+    border-radius: 50%;
+    background: var(--gray-color--3);
+    svg {
+      fill: white;
+    }
+  }
+}
+
+.affirmations-add-goal-modal {
+  .modal-dialog {
+    max-width: 65em;
+  }
+  .modal-body {
+    padding: 2em;
+  }
+  .affirmation-goals .card {
+    justify-content: center;
+    align-items: center;
+    label {
+      min-width: 8.5em;
+      min-height: 1.5em;
+    }
+  }
+}
+
+.affirmation-edit-modal {
+  text-align: center;
+  .modal-body {
+    padding: 0;
+  }
+  .title {
+    font-size: 16px;
+  }
+}

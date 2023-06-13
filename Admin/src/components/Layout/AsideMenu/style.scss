@@ -1,0 +1,45 @@
+.aside-containter {
+  height: 100%;
+  position: relative;
+  box-shadow: 3px 0 3px 2px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-menu-1);
+  overflow-y: auto;
+  .menu-title {
+    height: 4rem;
+    background-color: var(--color-menu-2);
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    span {
+      cursor: pointer;
+      &:hover {
+        color: var(--color-blue-1);
+      }
+    }
+  }
+  .menu-content {
+    .menu-items {
+      .link {
+        text-decoration: none;
+        color: var(--color-white);
+        .menu-item {
+          height: 3rem;
+          display: flex;
+          align-items: center;
+          &:hover {
+            font-weight: 700;
+            background-color: var(--color-menu-2);
+          }
+          .item {
+            padding-left: 1rem;
+          }
+        }
+      }
+    }
+    .signout {
+      bottom: 1rem;
+      position: absolute;
+      width: 100%;
+    }
+  }
+}

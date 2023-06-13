@@ -1,0 +1,47 @@
+
+.InfoIcon {
+  margin: auto;
+  color: var(--primary-color);
+  text-align: center;
+
+  position: relative;
+  display: inline-block;
+}
+
+.InfoIcon:hover {
+  margin: auto;
+  color: var(--primary-color);
+  text-align: left;
+}
+
+
+.InfoIcon .InfoIcontext {
+  visibility: hidden;
+  background-color: white;
+  color: var(--gray-color--1);
+  // text-align: center;
+  font-weight: 500;
+
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 130%;
+  &.InfoIcon-position-right {
+    right: 0;
+  }
+  border-radius: 8px;
+  border: solid 1px var(--primary-color);
+}
+
+.InfoIcon:hover .InfoIcontext {
+  visibility: visible;
+  width: 370px;
+  padding: 5px 5px 5px 10px;
+
+  
+  @media only screen and (max-width: 480px) {
+    width: 240px;
+  }
+
+}

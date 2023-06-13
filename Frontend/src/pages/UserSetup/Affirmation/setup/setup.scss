@@ -1,0 +1,110 @@
+@import "@/assets/scss/colors.scss";
+.setup-page {
+  height: 100vh;
+  .text-color-gray {
+    color: $primary-color;
+    .text-size {
+      font-size: small;
+    }
+  }
+  .text-color-gray-6 {
+    color: $gray-6;
+  }
+
+  .block-text {
+    border: 0.125rem solid $primary-color;
+    color: $primary-color;
+    min-height: 12.5rem;
+    .block-padding-t {
+      padding-top: 7rem;
+    }
+  }
+  .custom_card {
+    border: 1px solid var(--primary-color) !important;
+    .custom_card_header {
+      background-color: $primary-color;
+      color: $white;
+    }
+    .image-frame {
+      padding: 0px 0px;
+      .image {
+        width: 100%;
+      }
+    }
+    .bigger-card {
+      min-height: 15rem;
+      min-width: 10rem;
+    }
+    .middle-card {
+      min-height: 9rem;
+      min-width: 10rem;
+    }
+    .InfoIcon {
+      margin: 0;
+      svg {
+        fill: var(--white);
+      }
+    }
+  }
+
+  .bigger-card {
+    min-height: 18rem;
+    max-height: 35rem;
+    .card-body {
+      overflow: auto;
+    }
+    @media only screen and (max-width: 640px) {
+      min-height: auto;
+    }
+  }
+  .middle-card {
+    min-height: 9rem;
+    max-height: 21rem;
+    .container {
+      overflow: auto;
+    }
+    @media only screen and (max-width: 640px) {
+      min-height: auto;
+    }
+  }
+
+  .mindmail-btn-primary {
+    color: $white-color !important;
+    background-color: $primary-color !important;
+    border-color: $white-btn-border-color !important;
+  }
+  .card-footer {
+    border-top: 1px solid var(--primary-color);
+    background-color: white;
+  }
+}
+
+.option-modal {
+  text-align: center;
+
+  .modal-content {
+    border-radius: 8px;
+    overflow: hidden;
+
+    .modal-body {
+      padding: 0;
+
+      .modal-button {
+        display: block;
+        padding: 1.5em 2.5em;
+        cursor: pointer;
+        width: 100%;
+        border-top: 1px solid var(--primary-color);
+
+        &:hover {
+          background: var(--gray-color--5);
+          color: white;
+        }
+      }
+    }
+
+    .title {
+      font-size: 16px;
+    }
+  }
+}

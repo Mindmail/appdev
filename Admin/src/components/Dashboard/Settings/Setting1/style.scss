@@ -1,0 +1,78 @@
+.setting-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .setting-body {
+    background-color: white;
+    overflow: auto;
+    border-radius: 0.3rem;
+    margin: 1rem;
+    height: 100%;
+    padding: 1rem;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .setting-content {
+      .tab-content {
+        padding: 1rem;
+      }
+    }
+  }
+  .chatbuddy-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .chatbuddy-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        font-size: 0.7rem;
+        color: #7e8299;
+      }
+      button {
+        border: transparent;
+        background-color: #f1faff;
+        color: #009ef7;
+        &:hover {
+          background-color: #009ef7;
+          color: #f1faff;
+        }
+      }
+    }
+    .chatbuddy-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1rem;
+    }
+  }
+  
+  .modal {
+    .modal-dialog {
+      .modal-content {
+        .modal-body {
+          .avatar-modal {
+            .avatar-upload {
+              border: 1px solid var(--color-primary);
+              text-align: center;
+              cursor: pointer;
+              border-radius: 0.5rem;
+              label {
+                cursor: pointer;
+              }
+              .uploadavatar {
+                display: none;
+              }
+            }
+            .avatar-preview {
+              overflow-x: auto;
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+

@@ -1,0 +1,192 @@
+.home-page-layout {
+    min-height: 100vh;
+
+    .header {
+        background: none;
+        height: auto !important;
+
+        .left {
+            text-align: right;
+        }
+    }
+
+    .body {
+        display: flex;
+        align-items: center;
+
+        .content-body {
+            max-width: 678px;
+            margin: 0 auto;
+
+            .header-content {
+                margin-bottom: 1.75rem;
+            }
+
+            .content-intro {
+                max-width: 590px;
+                margin: 0 auto;
+                margin-bottom: 1.75rem;
+            }
+        }
+    }
+
+    .footer {
+        .link-footer {
+            display: flex;
+            justify-content: space-evenly;
+
+            
+            @media (min-width: 992px) {
+                display: none !important;
+                background-color: #cce6ea;
+            }
+
+            a {
+                color: var(--primary-color);
+                font-size: 16px;
+                font-weight: 500;
+                border-bottom: 1px solid transparent;
+                transition: all 0.3s;
+                text-decoration: none;
+
+                &:hover {
+                    border-bottom-color: var(--primary-color);
+                }
+            }
+        }
+
+        .copy-right {
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 10px;
+            font-weight: 500;
+        }
+
+        .copy-right-mobile {
+            text-align: center;
+            color: var(--secondary-color);
+            font-size: 10px;
+            font-weight: 500;
+        }
+
+        svg {
+            transition: all 0.3s;
+
+            &:hover {
+                opacity: 0.75;
+            }
+        }
+
+        @media only screen and (max-width: 640px) {
+            .footer-1 {
+                margin-top: 4em;
+            }
+
+            .footer-1+.footer-2 {
+                margin-top: 2.2em;
+            }
+
+            .footer-2+.footer-3 {
+                margin-top: 5.5em;
+            }
+
+            .footer-3 {
+                margin-top: 1.5em;
+                margin-bottom: 1.5em;
+            }
+        }
+    }
+}
+
+.home-modal {
+    .modal-dialog {
+        max-width: 540px;
+        width: 100%;
+
+        .modal-header {
+            border-bottom: none;
+        }
+
+        .modal-body {
+            padding-bottom: 5rem;
+
+            @media only screen and (max-width: 1366px) {
+                padding-bottom: 3rem;
+            }
+
+            @media only screen and (max-width: 767px) {
+                padding-top: 0;
+                padding-bottom: 1rem;
+            }
+
+            .login-form {
+                max-width: 360px;
+                padding: 2.5rem 0;
+                margin: 0 auto;
+
+                @media only screen and (max-width: 1366px) {
+                    padding: 1.5rem 0;
+                }
+
+                @media only screen and (max-width: 640px) {
+                    .google-button {
+                        margin-top: 1.3em;
+                    }
+                }
+
+                .divider {
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                }
+
+                .divider::before,
+                .divider::after {
+                    content: '';
+                    flex: 1;
+                    height: 1px;
+                    background: var(--gray-color--5);
+                }
+
+                .divider:not(:empty)::before {
+                    margin-right: 2em;
+                }
+
+                .divider:not(:empty)::after {
+                    margin-left: 2em;
+                }
+
+                input {
+                    height: auto;
+                    padding: 0.5rem 1rem;
+                    background: transparent;
+                    border-color: rgba(152, 147, 164, 0.4);
+                    border-radius: 8px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: var(--primary-color);
+                }
+
+                button {
+                    margin-top: 1.5rem;                    
+
+                    @media only screen and (max-width: 1366px) {
+                        margin-top: 0.5rem;
+                    }
+                }
+
+                a {
+                    text-decoration: underline;
+                }
+            }
+
+            .account-exist {
+                padding-top: 2rem;
+
+                @media only screen and (max-width: 767px) {
+                    padding-top: 0.5rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+
+.dashboard-visualization {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.dashboard-visualization-left {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  border:1px solid var(--gray-color--4);
+  border-radius: 10px;
+  align-items: center;
+}
+.visualization-area {
+  min-width: 500px;
+  min-height: 300px;
+  border:1px solid var(--gray-color--4);
+  border-radius: 10px;
+  margin-top: 5em;
+}
+.dashboard-visualization-right {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}

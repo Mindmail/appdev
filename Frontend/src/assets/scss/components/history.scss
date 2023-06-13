@@ -1,0 +1,53 @@
+.history-item {
+    border: 0;
+
+    .card-header {
+        padding: 0.25em;
+        border: 0;
+    }
+
+    .card-body {
+        margin: 0.25em;
+        padding: 0;
+        border: 1px solid var(--gray-color--1);
+        border-radius: 8px;
+        overflow: hidden;
+
+        .card-title {
+            margin: 0;
+            padding: 0.5em 1em;
+
+            .music-type,
+            .video-duration {
+                background: var(--gray-color--5);
+                color: white;
+                padding: 0.5em;
+                margin: 0 0.5em;
+            }
+            .music-type {
+                border-radius: 8px;
+            }
+            .video-duration {
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+
+.history-edit-modal {
+    text-align: center;
+
+    .modal-content {
+        border-radius: 8px;
+        overflow: hidden;
+
+        .modal-body {
+            padding: 0;
+        }
+    
+        .title {
+            font-size: 16px;
+        }
+    }
+}

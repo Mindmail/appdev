@@ -1,0 +1,81 @@
+.gratitude-item-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: transparent;
+  border: none;
+
+  .card-img-top {
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px var(--gray-color--5);
+  }
+
+  .gratitude-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray-color--5);
+  }
+
+  .gratitude-content {
+    position: relative;
+    color: var(--gray-color--5);
+
+    textarea {
+      background-color: transparent;
+      width: 100%;
+      min-height: 150px;
+      margin-top: 1em;
+      padding: 1.35em;
+      color: var(--gray-color--5);
+      border-color: var(--gray-color--5);
+      border-radius: 8px;
+      font-size: 1em !important;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .placeholder {
+      position: absolute;
+      top: 3.35em;
+      font-size: 1em !important;
+      left: 1.35em;
+    }
+
+    .error-message {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      font-size: 1em;
+      font-weight: 500;
+      color: white;
+      background-color: var(--primary-color);
+      border-radius: 8px;
+      z-index: 1;
+
+      svg {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .card-footer {
+    border-top: 0;
+    background-color: transparent;
+    width: 50%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  .total {
+    font-size: 0.7rem;
+    margin-right: 1rem;
+    color: #a1a5b7;
+  }
+  .btn-page {
+    display: flex;
+    margin: 0 0.1rem;
+    .is-active {
+      background-color: var(--color-menu-1);
+      color: var(--color-white);
+    }
+
+    button {
+      border: transparent;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2rem;
+      height: 2rem;
+      color: var(--color-menu-1);
+      background-color: var(--color-blue-3);
+    }
+  }
+  .btn-page > *[disabled] {
+    opacity: 0.3;
+  }
+}

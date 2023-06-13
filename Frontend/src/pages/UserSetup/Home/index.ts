@@ -1,0 +1,5 @@
+export { default } from './Home'
+export * from './SocialMedia'
+export * from './Privacy'
+export * from './SignInModal'
+export * from './ForgotModal'
